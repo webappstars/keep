@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      URLS: URLS: ${{ secrets.URLS }}
+      URLS: ${{ secrets.URLS }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
     steps:
