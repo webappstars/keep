@@ -29,3 +29,5 @@ jobs:
 
       - name: Workflows keepalive
         uses: Fgerthoffert/actions-workflow-keepalive@v1.0.1
+        env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
