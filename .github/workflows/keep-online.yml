@@ -11,7 +11,6 @@ jobs:
 
     env:
       URLS: ${{ secrets.URLS }}
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
     steps:
       - name: Checkout repository
@@ -28,5 +27,5 @@ jobs:
       - name: Run keep-alive script
         run: node index.js
 
-     - name: Workflows keepalive
-       uses: Fgerthoffert/actions-workflow-keepalive@v1.0.1
+      - name: Workflows keepalive
+        uses: Fgerthoffert/actions-workflow-keepalive@v1.0.1
