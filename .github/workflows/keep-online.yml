@@ -27,8 +27,7 @@ jobs:
       - name: Run keep-alive script
         run: node index.js
 
-      - name: Workflows keepalive
+     - name: Run Keepalive Action
         uses: Fgerthoffert/actions-workflow-keepalive@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
